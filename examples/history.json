@@ -1,0 +1,65 @@
+{
+  "historyId": "paper-history",
+  "title": "Paper catalog history",
+  "context": "Select the documented report view.",
+  "facts": [
+    {
+      "id": "paper-spec",
+      "key": "paper",
+      "validFrom": "2026-01-01T00:00:00.000Z",
+      "validTo": "2026-02-01T00:00:00.000Z",
+      "revisions": [
+        {
+          "recordedAt": "2026-01-02T00:00:00.000Z",
+          "kind": "assert",
+          "value": "A4"
+        },
+        {
+          "recordedAt": "2026-01-20T00:00:00.000Z",
+          "kind": "assert",
+          "value": "A5"
+        }
+      ]
+    },
+    {
+      "id": "ink-spec",
+      "key": "ink",
+      "validFrom": "2026-01-01T00:00:00.000Z",
+      "validTo": "2026-02-01T00:00:00.000Z",
+      "revisions": [
+        {
+          "recordedAt": "2026-01-05T00:00:00.000Z",
+          "kind": "assert",
+          "value": "black"
+        },
+        {
+          "recordedAt": "2026-01-25T00:00:00.000Z",
+          "kind": "retract"
+        }
+      ]
+    }
+  ],
+  "profiles": [
+    {
+      "id": "original",
+      "label": "Original",
+      "reference": "Report A",
+      "effectiveAt": "2026-01-15T00:00:00.000Z",
+      "knownAt": "2026-01-15T00:00:00.000Z"
+    },
+    {
+      "id": "corrected",
+      "label": "Corrected",
+      "reference": "Report B",
+      "effectiveAt": "2026-01-15T00:00:00.000Z",
+      "knownAt": "2026-01-22T00:00:00.000Z"
+    },
+    {
+      "id": "later",
+      "label": "After retraction",
+      "reference": "Report C",
+      "effectiveAt": "2026-01-15T00:00:00.000Z",
+      "knownAt": "2026-01-30T00:00:00.000Z"
+    }
+  ]
+}
